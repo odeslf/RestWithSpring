@@ -5,7 +5,7 @@ Este repositório contém um projeto focado no estudo e aprofundamento em desenv
 
 ## Conteúdo e Tópicos de Estudo:
 
-Desenvolvimento de API RESTful: Implementação com Spring Boot, focando em Clean Code e Design Patterns.
+### Desenvolvimento de API RESTful: Implementação com Spring Boot, focando em Clean Code e Design Patterns.
 
 Segurança: Aplicação de JWT e Spring Security para autenticação e autorização.
 

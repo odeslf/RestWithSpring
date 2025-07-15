@@ -3,7 +3,7 @@
 Este repositório contém um projeto focado no estudo e aprofundamento em desenvolvimento de APIs RESTful. O objetivo é explorar desde a concepção até o deploy, aplicando as melhores práticas de código e segurança.
 
 Conteúdo e Tópicos de Estudo:
-Desenvolvimento de API RESTful: Implementação com Spring Boot, focando em Clean Code e Design Patterns.
+* Desenvolvimento de API RESTful: Implementação com Spring Boot, focando em Clean Code e Design Patterns.
 
 Segurança: Aplicação de JWT e Spring Security para autenticação e autorização.
 
@@ -52,13 +52,3 @@ GCP
 
 GitHub Actions
 
-Como Executar o Projeto:
-Clone o repositório: git clone https://docs.github.com/articles/referencing-and-citing-content
-
-Navegue até o diretório do projeto: cd [nome-do-seu-projeto]
-
-[Instruções adicionais para configuração e execução (ex: mvn clean install e mvn spring-boot:run)]
-
-Sinta-se à vontade para explorar o código. Dúvidas ou sugestões são bem-vindas através das issues.
-
-Lembre-se de substituir [Nome do seu Projeto Aqui] e https://docs.github.com/articles/referencing-and-citing-content pelos dados reais do seu projeto. Se precisar de mais alguma alteração, me diga!

@@ -2,8 +2,10 @@
 
 Este repositório contém um projeto focado no estudo e aprofundamento em desenvolvimento de APIs RESTful. O objetivo é explorar desde a concepção até o deploy, aplicando as melhores práticas de código e segurança.
 
-Conteúdo e Tópicos de Estudo:
-* Desenvolvimento de API RESTful: Implementação com Spring Boot, focando em Clean Code e Design Patterns.
+
+## Conteúdo e Tópicos de Estudo:
+
+Desenvolvimento de API RESTful: Implementação com Spring Boot, focando em Clean Code e Design Patterns.
 
 Segurança: Aplicação de JWT e Spring Security para autenticação e autorização.
 
@@ -17,38 +19,23 @@ Comunicação: Envio de e-mails com Spring Mail e documentação da API com Swag
 
 Contêinerização e Deploy: Uso de Docker para contêinerização e deploy em ambientes de nuvem como AWS e GCP, com Continuous Deployment via GitHub Actions.
 
-Tecnologias Principais:
-Spring Boot
 
-JWT
+## Stack utilizada
 
-Spring Security
-
-Postman
-
-JasperReports
-
-Swagger (OpenAPI)
-
-JUnit 5
-
-Mockito
-
-REST Assured
-
-MySQL
-
-Spring Data JPA
-
-Hibernate
-
-Flyway
-
-Docker
-
-AWS
-
-GCP
-
-GitHub Actions
-
+* #### Spring Boot 
+* #### Spring Security
+* #### Spring Data JPA
+* #### MySQL
+* #### Hibernate
+* #### JWT 
+* #### Flyway
+* #### JUnit 5
+* #### Mockito
+* #### REST Assured
+* #### Docker
+* #### AWS
+* #### GCP
+* #### GitHub Actions
+* #### Postman
+* #### Swagger (OpenAPI)
+* #### JasperReports

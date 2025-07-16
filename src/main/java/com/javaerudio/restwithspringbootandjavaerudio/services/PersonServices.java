@@ -1,9 +1,12 @@
 package com.javaerudio.restwithspringbootandjavaerudio.services;
 
-import com.javaerudio.restwithspringbootandjavaerudio.data.dto.PersonDTO;
+import com.javaerudio.restwithspringbootandjavaerudio.data.v1.PersonDTO;
+import com.javaerudio.restwithspringbootandjavaerudio.data.v2.PersonDTOV2;
 import com.javaerudio.restwithspringbootandjavaerudio.exception.ResourceNotFoundException;
 import static com.javaerudio.restwithspringbootandjavaerudio.mapper.ObjectMapper.parseListObject;
 import static com.javaerudio.restwithspringbootandjavaerudio.mapper.ObjectMapper.parseObject;
+
+import com.javaerudio.restwithspringbootandjavaerudio.mapper.custom.PersonMapper;
 import com.javaerudio.restwithspringbootandjavaerudio.model.Person;
 import com.javaerudio.restwithspringbootandjavaerudio.repository.PersonRepository;
 import org.slf4j.Logger;
@@ -23,6 +26,9 @@ public class PersonServices {
     @Autowired
     PersonRepository repository;
 
+    @Autowired
+    PersonMapper converter;
+
     public List<PersonDTO> findAll(){
         logger.info("Finding all persons");
         return parseListObject(repository.findAll(), PersonDTO.class);
@@ -41,6 +47,13 @@ public class PersonServices {
 
         return parseObject(repository.save(entity),
                 PersonDTO.class);
+    }
+
+    public PersonDTOV2 createV2(PersonDTOV2 person){
+        logger.info("Creating a new person V2");
+        var entity = converter.convertToEntity(person);
+
+        return converter.convertToDTO(repository.save(entity));
     }
 
     public PersonDTO update(PersonDTO person){

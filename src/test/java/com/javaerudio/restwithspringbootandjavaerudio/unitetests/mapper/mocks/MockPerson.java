@@ -1,6 +1,6 @@
 package com.javaerudio.restwithspringbootandjavaerudio.unitetests.mapper.mocks;
 
-import com.javaerudio.restwithspringbootandjavaerudio.data.dto.PersonDTO;
+import com.javaerudio.restwithspringbootandjavaerudio.data.v1.PersonDTO;
 import com.javaerudio.restwithspringbootandjavaerudio.model.Person;
 
 import java.util.ArrayList;

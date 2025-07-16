@@ -1,4 +1,4 @@
-package com.javaerudio.restwithspringbootandjavaerudio.data.dto;
+package com.javaerudio.restwithspringbootandjavaerudio.data.v1;
 
 
 import java.io.Serializable;

@@ -1,6 +1,6 @@
 package com.javaerudio.restwithspringbootandjavaerudio.services;
 
-import com.javaerudio.restwithspringbootandjavaerudio.data.v1.PersonDTO;
+import com.javaerudio.restwithspringbootandjavaerudio.data.dto.PersonDTO;
 import com.javaerudio.restwithspringbootandjavaerudio.exception.ResourceNotFoundException;
 import static com.javaerudio.restwithspringbootandjavaerudio.mapper.ObjectMapper.parseListObject;
 import static com.javaerudio.restwithspringbootandjavaerudio.mapper.ObjectMapper.parseObject;

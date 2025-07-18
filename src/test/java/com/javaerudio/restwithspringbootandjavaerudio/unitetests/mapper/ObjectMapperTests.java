@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.List;
 
-import com.javaerudio.restwithspringbootandjavaerudio.data.v1.PersonDTO;
+import com.javaerudio.restwithspringbootandjavaerudio.data.dto.PersonDTO;
 import com.javaerudio.restwithspringbootandjavaerudio.model.Person;
 import com.javaerudio.restwithspringbootandjavaerudio.unitetests.mapper.mocks.MockPerson;
 import org.junit.jupiter.api.BeforeEach;

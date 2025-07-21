@@ -20,7 +20,8 @@ public class PersonController {
 
     @RequestMapping(value = "/{id}",
             produces = {MediaType.APPLICATION_JSON_VALUE,
-                        MediaType.APPLICATION_XML_VALUE})
+                        MediaType.APPLICATION_XML_VALUE,
+                        MediaType.APPLICATION_YAML_VALUE})
     public PersonDTO findById(@PathVariable("id") Long id) {
         var person = service.findById(id);
         person.setBirthDate(new Date());
@@ -30,16 +31,19 @@ public class PersonController {
     }
 
     @GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE,
-            MediaType.APPLICATION_XML_VALUE})
+                            MediaType.APPLICATION_XML_VALUE,
+                            MediaType.APPLICATION_YAML_VALUE})
     public List<PersonDTO> findAll () {
         return service.findAll();
     }
 
     @PostMapping(
             consumes = {MediaType.APPLICATION_JSON_VALUE,
-                        MediaType.APPLICATION_XML_VALUE},
+                        MediaType.APPLICATION_XML_VALUE,
+                        MediaType.APPLICATION_YAML_VALUE},
             produces = {MediaType.APPLICATION_JSON_VALUE,
-                        MediaType.APPLICATION_XML_VALUE}
+                        MediaType.APPLICATION_XML_VALUE,
+                        MediaType.APPLICATION_YAML_VALUE}
     )
     public PersonDTO create(@RequestBody PersonDTO person) {
         return service.create(person);
@@ -47,9 +51,11 @@ public class PersonController {
 
     @PutMapping(
             consumes = {MediaType.APPLICATION_JSON_VALUE,
-                        MediaType.APPLICATION_XML_VALUE},
+                        MediaType.APPLICATION_XML_VALUE,
+                        MediaType.APPLICATION_YAML_VALUE},
             produces = {MediaType.APPLICATION_JSON_VALUE,
-                        MediaType.APPLICATION_XML_VALUE}
+                        MediaType.APPLICATION_XML_VALUE,
+                        MediaType.APPLICATION_YAML_VALUE}
     )
     public PersonDTO update(@RequestBody PersonDTO person) {
         return service.update(person);

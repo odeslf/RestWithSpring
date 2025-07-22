@@ -34,8 +34,6 @@ Este repositório contém um projeto focado no estudo e aprofundamento em desenv
 * #### REST Assured
 * #### Docker
 * #### AWS
-* #### GCP
-* #### GitHub Actions
 * #### Postman
 * #### Swagger (OpenAPI)
 * #### JasperReports

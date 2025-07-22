@@ -18,16 +18,16 @@ public class PersonController {
     @Autowired
     private PersonServices service;
 
-    @RequestMapping(value = "/{id}",
+    @GetMapping(value = "/{id}",
             produces = {MediaType.APPLICATION_JSON_VALUE,
                         MediaType.APPLICATION_XML_VALUE,
                         MediaType.APPLICATION_YAML_VALUE})
     public PersonDTO findById(@PathVariable("id") Long id) {
-        var person = service.findById(id);
-        person.setBirthDate(new Date());
-        person.setPhoneNumber("+55 (21) 97063-9828");
-        person.setSensitiveData("Hello World");
-        return person;
+        return service.findById(id);
+//        person.setBirthDate(new Date());
+//        person.setPhoneNumber("+55 (21) 97063-9828");
+//        person.setSensitiveData("Hello World");
+
     }
 
     @GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE,
@@ -67,5 +67,3 @@ public class PersonController {
         return ResponseEntity.noContent().build();
     }
 }
-
-

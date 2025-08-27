@@ -31,9 +31,6 @@ Este repositório contém um projeto focado no estudo e aprofundamento em desenv
 * #### Flyway
 * #### JUnit 5
 * #### Mockito
-* #### REST Assured
-* #### Docker
-* #### AWS
 * #### Postman
 * #### Swagger (OpenAPI)
-* #### JasperReports
+

@@ -15,5 +15,9 @@ spring:
     open-in-view: false
 logging:
   level:
-    # root: warn
-   com.javaerudio.restwithspringbootandjavaerudio: DEBUG
+     root: INFO
+   #com.javaerudio.restwithspringbootandjavaerudio: DEBUG
+spring-doc:
+  paths-to-match: /api/**/v1/**
+  swagger-ui:
+    use-root-path: true

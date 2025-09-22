@@ -2,6 +2,7 @@ package com.javaerudio.restwithspringbootandjavaerudio.model;
 
 
 import jakarta.persistence.*;
+import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -9,7 +10,7 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
-@Table(name = "book")
+@Table(name = "books")
 public class Book implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -18,9 +19,16 @@ public class Book implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false, length = 50)
     private String author;
+
+    @Column(nullable = false)
     private LocalDateTime launchDate;
+
+    @Column(nullable = false)
     private BigDecimal price;
+
+    @Column(nullable = false, length = 100)
     private String title;
 
     public Long getId() {

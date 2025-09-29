@@ -60,7 +60,7 @@ public class BookService {
                 .orElseThrow(() -> new ResourceNotFoundException("No records found for this id!"));
 
         entity.setAuthor(book.getAuthor());
-        entity.setLaunchDate(book.getLauchDate());
+        entity.setLaunchDate(book.getLaunchDate());
         entity.setPrice(book.getPrice());
         entity.setTitle(book.getTitle());
         entity.setTitle(book.getTitle());

@@ -13,8 +13,8 @@ public class BookDTO extends RepresentationModel<BookDTO> implements Serializabl
 
     private Long id;
     private String author;
-    private LocalDateTime lauchDate;
-    private BigDecimal price;
+    private LocalDateTime launchDate;
+    private Double price;
     private String title;
 
     public BookDTO() {
@@ -37,19 +37,19 @@ public class BookDTO extends RepresentationModel<BookDTO> implements Serializabl
         this.author = author;
     }
 
-    public LocalDateTime getLauchDate() {
-        return lauchDate;
+    public LocalDateTime getLaunchDate() {
+        return launchDate;
     }
 
-    public void setLauchDate(LocalDateTime lauchDate) {
-        this.lauchDate = lauchDate;
+    public void setLaunchDate(LocalDateTime lauchDate) {
+        this.launchDate = lauchDate;
     }
 
-    public BigDecimal getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
@@ -66,11 +66,11 @@ public class BookDTO extends RepresentationModel<BookDTO> implements Serializabl
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         BookDTO bookDTO = (BookDTO) o;
-        return Objects.equals(getId(), bookDTO.getId()) && Objects.equals(getAuthor(), bookDTO.getAuthor()) && Objects.equals(getLauchDate(), bookDTO.getLauchDate()) && Objects.equals(getPrice(), bookDTO.getPrice()) && Objects.equals(getTitle(), bookDTO.getTitle());
+        return Objects.equals(getId(), bookDTO.getId()) && Objects.equals(getAuthor(), bookDTO.getAuthor()) && Objects.equals(getLaunchDate(), bookDTO.getLaunchDate()) && Objects.equals(getPrice(), bookDTO.getPrice()) && Objects.equals(getTitle(), bookDTO.getTitle());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), getId(), getAuthor(), getLauchDate(), getPrice(), getTitle());
+        return Objects.hash(super.hashCode(), getId(), getAuthor(), getLaunchDate(), getPrice(), getTitle());
     }
 }

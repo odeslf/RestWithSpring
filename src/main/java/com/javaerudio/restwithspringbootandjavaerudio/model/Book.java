@@ -25,7 +25,7 @@ public class Book implements Serializable {
     private LocalDateTime launchDate;
 
     @Column(nullable = false)
-    private BigDecimal price;
+    private Double price;
 
     @Column(nullable = false, length = 100)
     private String title;
@@ -54,11 +54,11 @@ public class Book implements Serializable {
         this.launchDate = launchDate;
     }
 
-    public BigDecimal getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
